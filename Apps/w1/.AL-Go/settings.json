@@ -85,7 +85,7 @@
                     ],
     "appDependencyProbingPaths":  [
                                       {
-                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt3",
                                           "projects":  "Modules",
                                           "release_status":  "latestBuild"
                                       }
