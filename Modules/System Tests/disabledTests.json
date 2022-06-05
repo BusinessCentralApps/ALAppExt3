@@ -762,5 +762,141 @@
     {
         "Method":  "DeleteSuperUserWhenAnotherUserIsSuperTest",
         "CodeunitName":  "User Permissions Test"
+    },
+    {
+        "Method":  "TestChecklistPageAssignedToWithMultipleUsers",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestCreateManualSetupChecklistItem",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestCreateLearnChecklistItem",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestCreateApplicationFeatureChecklistItem",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestCreateVideoChecklistItem",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestCreateSpotlightTourChecklistItem",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestChangeCompletionRequirementTypeFromSpecificUsersToSpecificUsers",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestChangeCompletionRequirementTypeFromSpecificUsersToAnyone",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestChangeCompletionRequirementTypeFromSpecificUsersToEveryone",
+        "CodeunitName":  "Checklist Administration Test"
+    },
+    {
+        "Method":  "TestInsertDuplicateAssistedSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateAssistedSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateUsersForAssistedSetupChecklistItem",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertManualSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertDuplicateManualSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateManualSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateUsersForManualSetupChecklistItem",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertLearnChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertDuplicateLearnChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateLearnChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateUsersForLearnChecklistItem",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertVideoChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestInsertSpotlightTourChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestDeleteAssistedSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestDeleteManualSetupChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestDeleteLearnChecklistItemWithUsers",
+        "CodeunitName":  "Checklist Facade Test"
+    },
+    {
+        "Method":  "TestUpdateUserFromAzureGraphForAValidUserWithUpdatedFullName",
+        "CodeunitName":  "Azure AD Graph User Test"
+    },
+    {
+        "Method":  "TestUpdateUserFromAzureGraphForAValidUserWithUpdatedContactEmail",
+        "CodeunitName":  "Azure AD Graph User Test"
+    },
+    {
+        "Method":  "TestUpdateUserFromAzureGraphForAValidUserWithUpdatedAuthenticationEmail",
+        "CodeunitName":  "Azure AD Graph User Test"
+    },
+    {
+        "Method":  "TestEnsureAuthenticationEmailIsNotInUse",
+        "CodeunitName":  "Azure AD Graph User Test"
+    },
+    {
+        "Method":  "ExistingUserNameTest",
+        "CodeunitName":  "User Selection Test"
+    },
+    {
+        "Method":  "FiltersOnUserTableAreRespectedTest",
+        "CodeunitName":  "User Selection Test"
+    },
+    {
+        "Method":  "SelectUserOKTest",
+        "CodeunitName":  "User Selection Test"
+    },
+    {
+        "Method":  "SelectUserOKWithTemporaryRecordTest",
+        "CodeunitName":  "User Selection Test"
+    },
+    {
+        "Method":  "SelectUserCancelTest",
+        "CodeunitName":  "User Selection Test"
     }
 ]
