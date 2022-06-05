@@ -1,0 +1,20 @@
+﻿{
+    "country":  "ca",
+    "appFolders":  [
+                       "ContosoCoffeeDemoDatasetCA\\app",
+                       "HybridBCLast_CA\\app"
+                   ],
+    "testFolders":  [
+                        "HybridBCLast_CA\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules,Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "24G",
+    "RepoVersion":  "20.1",
+    "enablePerTenantExtensionCop":  false
+}

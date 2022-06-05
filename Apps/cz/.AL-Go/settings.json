@@ -1,0 +1,34 @@
+﻿{
+    "country":  "cz",
+    "appFolders":  [
+                       "AdvancedLocalizationPack\\app",
+                       "AdvancePaymentsLocalization\\app",
+                       "BankingDocumentsLocalization\\app",
+                       "CashDeskLocalization\\app",
+                       "CompensationLocalization\\app",
+                       "CoreLocalizationPack\\app",
+                       "FixedAssetLocalization\\app",
+                       "HybridBCLast_CZ\\app",
+                       "Onprem Permissions CZ\\app"
+                   ],
+    "testFolders":  [
+                        "AdvancedLocalizationPack\\test",
+                        "AdvancePaymentsLocalization\\test",
+                        "BankingDocumentsLocalization\\test",
+                        "CashDeskLocalization\\test",
+                        "CompensationLocalization\\test",
+                        "CoreLocalizationPack\\test",
+                        "FixedAssetLocalization\\test",
+                        "HybridBCLast_CZ\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules,Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "24G",
+    "RepoVersion":  "20.1",
+    "enablePerTenantExtensionCop":  false
+}
