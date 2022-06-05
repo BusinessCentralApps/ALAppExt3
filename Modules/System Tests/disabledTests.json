@@ -884,6 +884,10 @@
         "CodeunitName":  "User Selection Test"
     },
     {
+        "Method":  "NonExistingUserNameTest",
+        "CodeunitName":  "User Selection Test"
+    },
+    {
         "Method":  "FiltersOnUserTableAreRespectedTest",
         "CodeunitName":  "User Selection Test"
     },
