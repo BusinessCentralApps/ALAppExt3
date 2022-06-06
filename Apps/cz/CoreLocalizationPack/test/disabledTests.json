@@ -254,5 +254,12 @@
     {
         "Method":  "TestDocumentFooterSalesCrMemo",
         "CodeunitName":  "Document Footer CZL"
-    }
-]
+    },
+    {
+        "Method":  "ValidateSalesLineWithTariffNo",
+        "CodeunitName":  "Reverse Charge CZL"
+    },
+    {
+        "Method":  "PostSalesWithCommodityUnderLimit",
+        "CodeunitName":  "Reverse Charge CZL"
+    }]
