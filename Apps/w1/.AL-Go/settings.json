@@ -87,7 +87,7 @@
                                       {
                                           "repo":  "https://github.com/BusinessCentralApps/ALAppExt3",
                                           "projects":  "Modules",
-                                          "release_status":  "latestBuild"
+                                          "release_status":  "include"
                                       }
                                   ],
     "MemoryLimit":  "24G",
