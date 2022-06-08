@@ -7,7 +7,12 @@ $parameters.appfile | Out-Host
 $systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Microsoft_System Application_*.*.*.*.app" }
 $ModulesTestApps = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Modules-main-TestApps-*.*.*.*.zip" }
 if ($systemAppFile) {
-    $includeOnlyAppIds = $parameters.includeOnlyAppIds
+    if ($parameters.ContainsKey('includeOnlyAppIds')) {
+        $includeOnlyAppIds = $parameters.includeOnlyAppIds
+    }
+    else {
+        $includeOnlyAppIds = @()
+    }
     $remainingAppFiles = $parameters.appfile | Where-Object { $_ -ne $systemAppFile }
     $parameters.AppFile = $systemAppFile
     $parameters.includeOnlyAppIds = @()
