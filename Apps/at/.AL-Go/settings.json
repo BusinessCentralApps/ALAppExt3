@@ -9,11 +9,17 @@
                     ],
     "appDependencyProbingPaths":  [
                                       {
-                                          "projects":  "Modules,Apps\\W1",
+                                          "projects":  "Modules",
                                           "release_status":  "include",
+                                          "installOnlyReferencedApps":  false,
                                           "repo":  "https://github.com/BusinessCentralApps/ALAppExt3"
-                                      }
-                                  ],
+                                      },
+                                      {
+                                        "projects":  "Apps\\W1",
+                                        "release_status":  "include",
+                                        "repo":  "https://github.com/BusinessCentralApps/ALAppExt3"
+                                    }
+                                ],
     "MemoryLimit":  "24G",
     "RepoVersion":  "20.1",
     "enablePerTenantExtensionCop":  false
