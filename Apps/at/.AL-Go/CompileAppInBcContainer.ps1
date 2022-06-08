@@ -41,7 +41,7 @@ if ($appFile) {
             $filename -like "Microsoft_Library Variable Storage.app" -or $filename -like "Microsoft_Library Variable Storage_*.*.*.*.app" -or
             $filename -like "Microsoft_System Application Test Library.app" -or $filename -like "Microsoft_System Application Test Library_*.*.*.*.app" -or
             $filename -like "Microsoft_Test Runner.app" -or $filename -like "Microsoft_Test Runner_*.*.*.*.app") {
-        Write-Host "Copy $appFile to my folder"
+        Write-Host "Copying $appFile to my folder"
         Copy-Item -Path $appfile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my") -Force
     }
 }
