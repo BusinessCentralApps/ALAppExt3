@@ -19,8 +19,6 @@ if ($systemAppFile) {
     $parameters.SkipVerification = $true
     $parameters.includeOnlyAppIds = @()
 
-    Publish-BcContainerApp @parameters
-
     $parameters.AppFile = Get-ChildItem -Path (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my") -Filter "*.app" | ForEach-Object { $_.FullName }
     Publish-BcContainerApp @parameters
 
