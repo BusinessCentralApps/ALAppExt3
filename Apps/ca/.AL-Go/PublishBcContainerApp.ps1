@@ -8,7 +8,7 @@ $systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileN
 $ModulesTestApps = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Modules-main-TestApps-*.*.*.*.zip" }
 if ($systemAppFile) {
     if (!$parameters.ContainsKey('includeOnlyAppIds')) {
-        $includeOnlyAppIds = @()
+        $parameters.includeOnlyAppIds = @()
     }
     if (!$parameters.ContainsKey('SkipVerification')) {
         $parameters.SkipVerification = $false
