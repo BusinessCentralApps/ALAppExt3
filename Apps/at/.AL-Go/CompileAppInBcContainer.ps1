@@ -32,7 +32,18 @@ if ($appFile) {
             Write-Host "Copying Tests-TestLibraries to packages path"
             Copy-Item -Path $testLibrariesApp -Destination (Join-Path $packagesFolder "Microsoft_Tests-TestLibraries.app")
             Copy-Item -Path $testLibrariesApp -Destination "c:\run\my\Microsoft_Tests-TestLibraries.app"
+            New-Item -Path "c:\run\my\testtoolkit" -ItemType container | Out-Null
+            Copy-Item -Path $testLibrariesApp -Destination "c:\run\my\testtoolkit\Microsoft_Tests-TestLibraries.app"
         } -argumentList (Get-BcContainerPath -ContainerName $parameters.ContainerName -path $Parameters.appSymbolsFolder)
     }
+    if ($filename -like "Microsoft_Any.app" -or $filename -like "Microsoft_Any_*.*.*.*.app" -or
+            $filename -like "Microsoft_Library Assert.app" -or $filename -like "Microsoft_Library Assert_*.*.*.*.app" -or
+            $filename -like "Microsoft_Permissions Mock.app" -or $filename -like "Microsoft_Permissions Mock_*.*.*.*.app" -or
+            $filename -like "Microsoft_Library Variable Storage.app" -or $filename -like "Microsoft_Library Variable Storage_*.*.*.*.app" -or
+            $filename -like "Microsoft_System Application Test Library.app" -or $filename -like "Microsoft_System Application Test Library_*.*.*.*.app" -or
+            $filename -like "Microsoft_Test Runner.app" -or $filename -like "Microsoft_Test Runner_*.*.*.*.app") {
+        Copy-Item -Path $appfile -Destination "c:\run\my\testtoolkit\" -Force
+    }
 }
+
 $appFile
