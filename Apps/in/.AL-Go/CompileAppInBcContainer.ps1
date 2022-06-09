@@ -19,7 +19,7 @@ if ($appFile) {
                 $applicationApp = "C:\Applications\Application\Source\Microsoft_Application.app"
             }
             if (-not (Test-Path $testLibrariesApp)) {
-                $testLibrariesApp = $testLibrariesApp = "C:\Applications\BaseApp\Source\Microsoft_Tests-TestLibraries.app"
+                $testLibrariesApp = $testLibrariesApp = "C:\Applications\BaseApp\Test\Microsoft_Tests-TestLibraries.app"
             }
             Write-Host "Copying Base Application to packages path"
             Copy-Item -Path $baseApp -Destination (Join-Path $packagesFolder "Microsoft_Base Application.app")
