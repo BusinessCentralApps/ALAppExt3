@@ -32,5 +32,6 @@
                                 ],
     "MemoryLimit":  "24G",
     "RepoVersion":  "20.1",
+    "UpdateDependencies":  true,
     "enablePerTenantExtensionCop":  false
 }
