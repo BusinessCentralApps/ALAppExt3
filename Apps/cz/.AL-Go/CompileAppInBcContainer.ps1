@@ -12,6 +12,7 @@ if ($appFile) {
             $baseApp = "C:\Applications.*\Microsoft_Base Application_*.*.*.*.app"
             $applicationApp = "C:\Applications.*\Microsoft_Application_*.*.*.*.app"
             $testLibrariesApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
+            $SMBApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
             if (-not (Test-Path $baseApp)) {
                 $baseApp = "C:\Applications\BaseApp\Source\Microsoft_Base Application.app"
             }
@@ -19,7 +20,10 @@ if ($appFile) {
                 $applicationApp = "C:\Applications\Application\Source\Microsoft_Application.app"
             }
             if (-not (Test-Path $testLibrariesApp)) {
-                $testLibrariesApp = "C:\Applications\BaseApp\Source\Microsoft_Base Application.app"
+                $testLibrariesApp = "C:\Applications\BaseApp\Source\Microsoft_Tests-TestLibraries.app"
+            }
+            if (-not (Test-Path $SMBApp)) {
+                $SMBApp = "C:\Applications\BaseApp\Source\Microsoft_Tests-SMB.app"
             }
             Write-Host "Copying Base Application to packages path"
             Copy-Item -Path $baseApp -Destination (Join-Path $packagesFolder "Microsoft_Base Application.app")
@@ -32,6 +36,10 @@ if ($appFile) {
             Write-Host "Copying Tests-TestLibraries to packages path"
             Copy-Item -Path $testLibrariesApp -Destination (Join-Path $packagesFolder "Microsoft_Tests-TestLibraries.app")
             Copy-Item -Path $testLibrariesApp -Destination "c:\run\my\Microsoft_Tests-TestLibraries.app"
+
+            Write-Host "Copying Tests-SMB to packages path"
+            Copy-Item -Path $SMBApp -Destination (Join-Path $packagesFolder "Microsoft_Tests-SMB.app")
+            Copy-Item -Path $SMBApp -Destination "c:\run\my\Microsoft_Tests-SMB.app"
         } -argumentList (Get-BcContainerPath -ContainerName $parameters.ContainerName -path $Parameters.appSymbolsFolder)
     }
     if ($filename -like "Microsoft_Any.app" -or $filename -like "Microsoft_Any_*.*.*.*.app" -or
