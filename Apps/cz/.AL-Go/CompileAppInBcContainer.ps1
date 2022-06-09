@@ -12,7 +12,7 @@ if ($appFile) {
             $baseApp = "C:\Applications.*\Microsoft_Base Application_*.*.*.*.app"
             $applicationApp = "C:\Applications.*\Microsoft_Application_*.*.*.*.app"
             $testLibrariesApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
-            $SMBApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
+            $SMBApp = "C:\Applications.*\Microsoft_Tests-SMB_*.*.*.*.app"
             if (-not (Test-Path $baseApp)) {
                 $baseApp = "C:\Applications\BaseApp\Source\Microsoft_Base Application.app"
             }
