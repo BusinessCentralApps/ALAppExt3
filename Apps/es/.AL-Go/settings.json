@@ -12,7 +12,7 @@
                                       {
                                           "projects":  "Modules",
                                           "release_status":  "include",
-                                          "alwaysInstallApps":  [
+                                          "alwaysIncludeApps":  [
                                               "40860557-a18d-42ad-aecb-22b7dd80dc80",
                                               "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
                                               "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
