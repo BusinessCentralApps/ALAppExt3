@@ -42,7 +42,8 @@
                                         "repo":  "https://github.com/BusinessCentralApps/ALAppExt3"
                                     }
                                 ],
-    "MemoryLimit":  "24G",
+    "MemoryLimit":  "20G"
+,
     "RepoVersion":  "20.1",
     "UpdateDependencies":  true,
     "enablePerTenantExtensionCop":  false

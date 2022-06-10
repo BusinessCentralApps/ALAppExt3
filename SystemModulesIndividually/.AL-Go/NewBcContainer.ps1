@@ -10,7 +10,7 @@ if ("$env:GITHUB_RUN_ID" -eq "") {
     $parameters.shortcuts = "none"
 }
 
-New-BcContainer @parameters -dumpEventLog
+New-BcContainer @parameters
 
 $installedApps = Get-BcContainerAppInfo -containerName $containerName -tenantSpecificProperties -sort DependenciesLast
 $installedApps | ForEach-Object {
