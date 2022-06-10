@@ -4,5 +4,5 @@
     "bcContainerHelperVersion":  "dev",
     "runs-on":  "bc-build",
     "cacheImageName":  "",
-    "UsePsSession":  true
+    "UsePsSession":  false
 }
