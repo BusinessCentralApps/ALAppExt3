@@ -1,4 +1,6 @@
 [
+    { "codeunitName": "Azure AD User Management Test", "method": "TestOfficeSyncWizard" },
+    { "codeunitName": "Azure AD User Management Test", "method": "TestCodeunitRunPlansAreRefreshed" },
     { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateExpirationFromBase64Cert" },
     { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateNotBeforeFromBase64Cert" },
     { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperTest" },
