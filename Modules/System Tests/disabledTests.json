@@ -1,2 +1,22 @@
 [
+    { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateExpirationFromBase64Cert" },
+    { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateNotBeforeFromBase64Cert" },
+    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperTest" },
+    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsNotSuperTest" },
+    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperForSpecificCompanyTest" },
+    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsNotSuperForSpecificCompanyTest" },
+    { "codeunitName": "User Permissions Test", "method": "RemoveSuperPermissionsFromOnlySuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "RemoveSuperPermissionsFromSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteNonSuperAccessControlTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlNotSaasTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlFromNonSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DisableNonSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserWhenAnotherIsSuperTest" },
+    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserWhenAnotherNonSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "EnableSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserFailsTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteNonSuperUserTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteSuperUserFailsTest" },
+    { "codeunitName": "User Permissions Test", "method": "DeleteSuperUserWhenAnotherUserIsSuperTest" }
 ]
