@@ -1,67 +1,54 @@
 [
     {
-        "Method":  "CreateContainerSharedKeyTest",
-        "CodeunitName":  "ABS Container Client Test"
+      "Method": "CreateContainerSharedKeyTest",
+      "CodeunitName": "ABS Container Client Test"
     },
     {
-        "Method":  "CreateContainerFailedTest",
-        "CodeunitName":  "ABS Container Client Test"
+      "Method": "CreateContainerFailedTest",
+      "CodeunitName": "ABS Container Client Test"
     },
     {
-        "Method":  "ListContainersTest",
-        "CodeunitName":  "ABS Container Client Test"
+      "Method": "ListContainersTest",
+      "CodeunitName": "ABS Container Client Test"
     },
     {
-        "Method":  "LeaseContainerTest",
-        "CodeunitName":  "ABS Container Client Test"
+      "Method": "LeaseContainerTest",
+      "CodeunitName": "ABS Container Client Test"
     },
     {
-        "Method":  "PutBlobBlockBlobStreamTest",
-        "CodeunitName":  "ABS Blob Client Test"
+      "Method": "PutBlobBlockBlobStreamTest",
+      "CodeunitName": "ABS Blob Client Test"
     },
     {
-        "Method":  "GetBlockBlobTagsTest",
-        "CodeunitName":  "ABS Blob Client Test"
+      "Method": "GetBlockBlobTagsTest",
+      "CodeunitName": "ABS Blob Client Test"
     },
     {
-        "Method":  "GetBlockBlobChangedTagsTest",
-        "CodeunitName":  "ABS Blob Client Test"
+      "Method": "GetBlockBlobChangedTagsTest",
+      "CodeunitName": "ABS Blob Client Test"
     },
     {
-        "Method":  "GetBlockBlobEmptyTagsTest",
-        "CodeunitName":  "ABS Blob Client Test"
+      "Method": "GetBlockBlobEmptyTagsTest",
+      "CodeunitName": "ABS Blob Client Test"
     },
     {
-        "Method":  "TestDateConversion",
-        "CodeunitName":  "ABS Helper Functionality Test"
+      "Method": "TestDateConversion",
+      "CodeunitName": "ABS Helper Functionality Test"
     },
-    { "codeunitName": "Azure AD User Management Test", "method": "TestOfficeSyncWizard" },
-    { "codeunitName": "Azure AD User Management Test", "method": "TestCodeunitRunPlansAreRefreshed" },
-    { "codeunitName": "Extension Management Test", "method": "InstallUninstallExtension" },
-    { "codeunitName": "Extension Management Test", "method": "InstallExtensionDependencies" },
-    { "codeunitName": "Extension Management Test", "method": "IsExtensionInstalledByPackageId" },
-    { "codeunitName": "Extension Management Test", "method": "IsExtensionInstalledByAppId" },
-    { "codeunitName": "Extension Management Test", "method": "GetLatestVersionPackageIdByAppId" },
-    { "codeunitName": "Extension Management Test", "method": "GetCurrentlyInstalledVersionPackageIdByAppId" },
-    { "codeunitName": "Extension Management Test", "method": "GetSpecificVersionPackageIdByAppId" }
-    { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateExpirationFromBase64Cert" },
-    { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateNotBeforeFromBase64Cert" },
-    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperTest" },
-    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsNotSuperTest" },
-    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperForSpecificCompanyTest" },
-    { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsNotSuperForSpecificCompanyTest" },
-    { "codeunitName": "User Permissions Test", "method": "RemoveSuperPermissionsFromOnlySuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "RemoveSuperPermissionsFromSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteNonSuperAccessControlTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlNotSaasTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteAccessControlFromNonSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DisableNonSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserWhenAnotherIsSuperTest" },
-    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserWhenAnotherNonSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "EnableSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DisableSuperUserFailsTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteNonSuperUserTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteSuperUserFailsTest" },
-    { "codeunitName": "User Permissions Test", "method": "DeleteSuperUserWhenAnotherUserIsSuperTest" }
-]
+    {
+      "codeunitName": "Azure AD User Management Test",
+      "method": "TestOfficeSyncWizard"
+    },
+    {
+      "codeunitName": "X509Certificate2 Test",
+      "method": "VerifyCertificateExpirationFromBase64Cert"
+    },
+    {
+      "codeunitName": "X509Certificate2 Test",
+      "method": "VerifyCertificateNotBeforeFromBase64Cert"
+    },
+    {
+      "codeunitName": "Retention Policy Log Test",
+      "method": "*"
+    }
+  ]
