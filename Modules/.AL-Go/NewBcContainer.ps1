@@ -11,6 +11,7 @@ if ("$env:GITHUB_RUN_ID" -eq "") {
 }
 
 $parameters.myscripts = @( @{ "SetupNavUsers.ps1" = "Write-Host 'Skipping user creation'" } )
+$parameters.auth = 'Windows'
 
 New-BcContainer @parameters
 
