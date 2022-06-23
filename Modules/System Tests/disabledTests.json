@@ -43,7 +43,7 @@
     { "codeunitName": "Extension Management Test", "method": "IsExtensionInstalledByAppId" },
     { "codeunitName": "Extension Management Test", "method": "GetLatestVersionPackageIdByAppId" },
     { "codeunitName": "Extension Management Test", "method": "GetCurrentlyInstalledVersionPackageIdByAppId" },
-    { "codeunitName": "Extension Management Test", "method": "GetSpecificVersionPackageIdByAppId" }
+    { "codeunitName": "Extension Management Test", "method": "GetSpecificVersionPackageIdByAppId" },
     { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateExpirationFromBase64Cert" },
     { "codeunitName": "X509Certificate2 Test", "method": "VerifyCertificateNotBeforeFromBase64Cert" },
     { "codeunitName": "User Permissions Test", "method": "IsSuperWhenUserIsSuperTest" },
