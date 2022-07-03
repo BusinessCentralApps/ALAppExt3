@@ -294,8 +294,6 @@ codeunit 134701 "Email View Policy Tests"
         ConnectorMock.Initialize();
         ConnectorMock.AddAccount(Account);
 
-        PermissionsMock.Set('Email View Perm');
-
         // [Given] An own email policy
         EmailViewPolicy."User Security ID" := UserSecurityId();
         EmailViewPolicy."Email View Policy" := Enum::"Email View Policy"::AllRelatedRecordsEmails;
@@ -316,6 +314,7 @@ codeunit 134701 "Email View Policy Tests"
         SentEmail."User Security Id" := CreateGuid();
         SentEmail.Modify();
 
+        PermissionsMock.Start();
         PermissionsMock.Set('Email View Low Perm');
 
         SentEmailsPage.Trap();
@@ -814,7 +813,6 @@ codeunit 134701 "Email View Policy Tests"
         ConnectorMock.Initialize();
         ConnectorMock.AddAccount(Account);
 
-        PermissionsMock.Set('Email View Perm');
         EmailOutbox.DeleteAll();
         EmailViewPolicy.DeleteAll();
 
@@ -838,6 +836,7 @@ codeunit 134701 "Email View Policy Tests"
         EmailOutbox."User Security Id" := CreateGuid();
         EmailOutbox.Modify();
 
+        PermissionsMock.Start();
         PermissionsMock.Set('Email View Low Perm');
 
         EmailOutboxPage.Trap();

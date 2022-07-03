@@ -6,7 +6,6 @@
 codeunit 132586 "Assisted Setup Test"
 {
     EventSubscriberInstance = Manual;
-    SingleInstance = true;
     Subtype = Test;
 
     var
