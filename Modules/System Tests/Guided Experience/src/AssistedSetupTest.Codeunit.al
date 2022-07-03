@@ -11,7 +11,6 @@ codeunit 132586 "Assisted Setup Test"
 
     var
         LibraryAssert: Codeunit "Library Assert";
-        AssistedSetupTest: Codeunit "Assisted Setup Test";
         PermissionsMock: Codeunit "Permissions Mock";
         LastPageIDRun: Integer;
         NonExistingPageID: Integer;
@@ -20,6 +19,7 @@ codeunit 132586 "Assisted Setup Test"
     [HandlerFunctions('MySetupTestPageHandler,OtherSetupTestPageHandler')]
     procedure TestAssistedSetupsAreAdded()
     var
+        AssistedSetupTest: Codeunit "Assisted Setup Test";
         AssistedSetup: TestPage "Assisted Setup";
         Translation: TestPage Translation;
     begin
@@ -28,7 +28,7 @@ codeunit 132586 "Assisted Setup Test"
         Initialize();
 
         // [GIVEN] Subscribers are registered
-        if BindSubscription(AssistedSetupTest) then;
+        BindSubscription(AssistedSetupTest);
 
         // [WHEN] The subscribers are run by opening the assisted setup page
         AssistedSetup.OpenView();
@@ -105,8 +105,6 @@ codeunit 132586 "Assisted Setup Test"
         Initialize();
 
         // [GIVEN] Subscribers are not registered
-        UnbindSubscription(AssistedSetupTest);
-
         // [WHEN] system action OpenRoleBasedSetupExperience is triggered
         AssistedSetup.Trap();
         SystemActionTriggers.OpenRoleBasedSetupExperience();
@@ -119,11 +117,12 @@ codeunit 132586 "Assisted Setup Test"
     procedure TestAssistedSetupNotShownIfHandledOnBeforeOpenRoleBasedSetupExperience()
     var
         SystemActionTriggers: Codeunit "System Action Triggers";
+        AssistedSetupTest: Codeunit "Assisted Setup Test";
     begin
         Initialize();
 
         // [GIVEN] Subscribers are registered
-        if BindSubscription(AssistedSetupTest) then;
+        BindSubscription(AssistedSetupTest);
 
         // [WHEN] system action OpenRoleBasedSetupExperience is triggered
         SystemActionTriggers.OpenRoleBasedSetupExperience();
@@ -136,6 +135,7 @@ codeunit 132586 "Assisted Setup Test"
     procedure TestAssistedSetupsShowUpOnFilteredView()
     var
         GuidedExperience: Codeunit "Guided Experience";
+        AssistedSetupTest: Codeunit "Assisted Setup Test";
         AssistedSetupTestLibrary: Codeunit "Assisted Setup Test Library";
         AssistedSetupGroup: Enum "Assisted Setup Group";
     begin
@@ -143,7 +143,7 @@ codeunit 132586 "Assisted Setup Test"
         Initialize();
 
         // [GIVEN] Subscribers are registered
-        if BindSubscription(AssistedSetupTest) then;
+        BindSubscription(AssistedSetupTest);
 
         // [WHEN] The page is opened with filtered view
         GuidedExperience.OpenAssistedSetup(AssistedSetupGroup::WithoutLinks);
@@ -165,6 +165,7 @@ codeunit 132586 "Assisted Setup Test"
     procedure TestAssistedSetupPageDoesNotExist()
     var
         GuidedExperience: Codeunit "Guided Experience";
+        AssistedSetupTest: Codeunit "Assisted Setup Test";
         AssistedSetupGroup: Enum "Assisted Setup Group";
         GuidedExperienceType: Enum "Guided Experience Type";
     begin
@@ -172,7 +173,7 @@ codeunit 132586 "Assisted Setup Test"
         Initialize();
 
         // [GIVEN] Subscribers are registered
-        if BindSubscription(AssistedSetupTest) then;
+        BindSubscription(AssistedSetupTest);
 
         // [WHEN] The page is opened with filtered view
         GuidedExperience.OpenAssistedSetup(AssistedSetupGroup::ZZ);

@@ -303,17 +303,12 @@ codeunit 134701 "Email View Policy Tests"
 
         // [When] Create and send email
         CreateEmail(EmailMessage);
-        Assert.IsTrue(Email.Send(EmailMessage, Account), 'Email should send');
-
-        SentEmail.Init();
-        SentEmail."Message Id" := CreateGuid();
-        SentEmail."User Security Id" := CreateGuid();
-        SentEmail."Sent From" := 'TEST';
-        SentEmail.Insert();
 
         // We have direct permission for sent emails, but not for email message
         Email.AddRelation(EmailMessage, Database::"Sent Email", SentEmail.SystemId, Enum::"Email Relation Type"::"Primary Source", Enum::"Email Relation Origin"::"Compose Context");
         Email.AddRelation(EmailMessage, Database::"Email Message", CreateGuid(), Enum::"Email Relation Type"::"Related Entity", Enum::"Email Relation Origin"::"Compose Context");
+
+        Assert.IsTrue(Email.Send(EmailMessage, Account), 'Email should send');
 
         // [Then] Email is send
         SentEmail.SetRange("Message Id", EmailMessage.GetId());
@@ -807,7 +802,6 @@ codeunit 134701 "Email View Policy Tests"
     var
         EmailViewPolicy: Record "Email View Policy";
         EmailOutbox: Record "Email Outbox";
-        SentEmail: Record "Sent Email";
         Account: Record "Email Account" temporary;
         ConnectorMock: Codeunit "Connector Mock";
         EmailMessage: Codeunit "Email Message";
@@ -822,7 +816,6 @@ codeunit 134701 "Email View Policy Tests"
 
         PermissionsMock.Set('Email View Perm');
 
-        SentEmail.DeleteAll();
         EmailOutbox.DeleteAll();
         EmailViewPolicy.DeleteAll();
 
@@ -833,25 +826,18 @@ codeunit 134701 "Email View Policy Tests"
 
         // [When]  Create email and save email to outbox
         CreateEmail(EmailMessage);
-        Email.SaveAsDraft(EmailMessage);
-
-        SentEmail.Init();
-        SentEmail."Message Id" := CreateGuid();
-        SentEmail."User Security Id" := CreateGuid();
-        SentEmail."Sent From" := 'TEST';
-        SentEmail.Insert();
 
         // We have direct permission for sent emails, but not for email message
-        Email.AddRelation(EmailMessage, Database::"Sent Email", SentEmail.SystemId, Enum::"Email Relation Type"::"Primary Source", Enum::"Email Relation Origin"::"Compose Context");
+        Email.AddRelation(EmailMessage, Database::"Sent Email", CreateGuid(), Enum::"Email Relation Type"::"Primary Source", Enum::"Email Relation Origin"::"Compose Context");
         Email.AddRelation(EmailMessage, Database::"Email Message", CreateGuid(), Enum::"Email Relation Type"::"Related Entity", Enum::"Email Relation Origin"::"Compose Context");
+
+        Email.SaveAsDraft(EmailMessage);
 
         // [Then] Email is in outbox
         EmailOutbox.SetRange("Message Id", EmailMessage.GetId());
         Assert.IsTrue(EmailOutbox.FindFirst(), 'Email should be in outbox');
         EmailOutbox."User Security Id" := CreateGuid();
         EmailOutbox.Modify();
-
-        PermissionsMock.Set('Email View Perm');
 
         EmailOutboxPage.Trap();
         Page.Run(Page::"Email Outbox");
