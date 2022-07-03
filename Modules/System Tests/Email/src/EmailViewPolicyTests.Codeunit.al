@@ -822,6 +822,7 @@ codeunit 134701 "Email View Policy Tests"
 
         PermissionsMock.Set('Email View Perm');
 
+        SentEmail.DeleteAll();
         EmailOutbox.DeleteAll();
         EmailViewPolicy.DeleteAll();
 
