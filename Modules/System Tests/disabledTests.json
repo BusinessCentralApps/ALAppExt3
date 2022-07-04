@@ -1,54 +1,30 @@
 [
     {
-      "Method": "CreateContainerSharedKeyTest",
-      "CodeunitName": "ABS Container Client Test"
+      "CodeunitName": "ABS Container Client Test",
+      "Method": "*"
     },
     {
-      "Method": "CreateContainerFailedTest",
-      "CodeunitName": "ABS Container Client Test"
+      "CodeunitName": "ABS Blob Client Test",
+      "Method": "*"
     },
     {
-      "Method": "ListContainersTest",
-      "CodeunitName": "ABS Container Client Test"
+      "CodeunitName": "Azure AD User Management Test",
+      "Method": "TestOfficeSyncWizard"
     },
     {
-      "Method": "LeaseContainerTest",
-      "CodeunitName": "ABS Container Client Test"
+      "CodeunitName": "Extension Management Test",
+      "Method": "*"
     },
     {
-      "Method": "PutBlobBlockBlobStreamTest",
-      "CodeunitName": "ABS Blob Client Test"
+      "CodeunitName": "Retention Policy Log Test",
+      "Method": "*"
     },
     {
-      "Method": "GetBlockBlobTagsTest",
-      "CodeunitName": "ABS Blob Client Test"
+      "CodeunitName": "X509Certificate2 Test",
+      "Method": "VerifyCertificateExpirationFromBase64Cert"
     },
     {
-      "Method": "GetBlockBlobChangedTagsTest",
-      "CodeunitName": "ABS Blob Client Test"
-    },
-    {
-      "Method": "GetBlockBlobEmptyTagsTest",
-      "CodeunitName": "ABS Blob Client Test"
-    },
-    {
-      "Method": "TestDateConversion",
-      "CodeunitName": "ABS Helper Functionality Test"
-    },
-    {
-      "codeunitName": "Azure AD User Management Test",
-      "method": "TestOfficeSyncWizard"
-    },
-    {
-      "codeunitName": "X509Certificate2 Test",
-      "method": "VerifyCertificateExpirationFromBase64Cert"
-    },
-    {
-      "codeunitName": "X509Certificate2 Test",
-      "method": "VerifyCertificateNotBeforeFromBase64Cert"
-    },
-    {
-      "codeunitName": "Retention Policy Log Test",
-      "method": "*"
+      "CodeunitName": "X509Certificate2 Test",
+      "Method": "VerifyCertificateNotBeforeFromBase64Cert"
     }
   ]
