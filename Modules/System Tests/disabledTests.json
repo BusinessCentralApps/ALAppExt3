@@ -26,13 +26,5 @@
     {
       "CodeunitName": "X509Certificate2 Test",
       "Method": "VerifyCertificateNotBeforeFromBase64Cert"
-    },
-    {
-      "CodeunitName": "User Permissions Test",
-      "Method": "*"
-    },
-    {
-      "CodeunitName": "Azure AD User Management Test",
-      "Method": "TestCodeunitRunPlansAreRefreshed"
     }
   ]
