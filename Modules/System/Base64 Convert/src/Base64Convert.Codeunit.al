@@ -24,6 +24,14 @@ codeunit 4110 "Base64 Convert"
         exit(Base64ConvertImpl.ToBase64(String));
     end;
 
+    procedure ToBase64(String: Text; Dummy: Integer): Text
+    var
+        LocalDummy: Integer;
+    begin
+        LocalDummy := Dummy;
+        exit(Base64ConvertImpl.ToBase64(String));
+    end;
+
     /// <summary>
     /// Converts the value of the input string to its equivalent string representation that is encoded with base-64 digits.
     /// </summary>
