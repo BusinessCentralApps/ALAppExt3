@@ -22,8 +22,6 @@ codeunit 4101 "Persistent Blob"
         exit(PersistentBlobImpl.Create());
     end;
 
-    asdspds
-
     /// <summary>
     /// Check whether a BLOB with the Key exists.
     /// </summary>
