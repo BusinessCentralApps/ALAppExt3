@@ -15,8 +15,6 @@ codeunit 4507 "Email - OAuth Client" implements "Email - OAuth Client"
         TryGetAccessTokenInternal(AccessToken);
     end;
 
-sssasas
-
     [NonDebuggable]
     procedure TryGetAccessToken(var AccessToken: Text): Boolean
     begin
