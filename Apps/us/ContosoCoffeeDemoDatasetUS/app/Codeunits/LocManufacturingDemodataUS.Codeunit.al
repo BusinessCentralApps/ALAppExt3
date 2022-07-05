@@ -27,8 +27,6 @@ codeunit 10499 "Loc. Manufacturing Demodata-US"
         ManufacturingDemoAccounts.AddAccount(ManufacturingDemoAccount.WIPAccountFinishedgoods(), '10750');
     end;
 
-ssssssss
-
     [EventSubscriber(ObjectType::Table, Database::"Manufacturing Demo Data Setup", 'OnBeforeInsertEvent', '', false, false)]
     local procedure ModifySeriesCode(var Rec: Record "Manufacturing Demo Data Setup")
     begin
