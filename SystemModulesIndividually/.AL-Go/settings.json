@@ -1,7 +1,9 @@
 ﻿{
     "country":  "us",
     "appFolders":  [
-                       "..\\Modules\\System\\*"
+                       "..\\Modules\\System\\*",
+                       "..\\Modules\\System Test Libraries\\*",
+                       "..\\Modules\\System Tests\\*"
                    ],
     "artifact":  "//20.1/base/first",
     "enablePerTenantExtensionCop":  false,
