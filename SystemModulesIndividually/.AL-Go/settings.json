@@ -1,7 +1,7 @@
 ﻿{
     "country":  "us",
     "appFolders":  [
-                       "..\\Modules\\System\\*",
+                       "..\\Modules\\System\\*"
                    ],
     "testFolders":  [
                         "..\\Modules\\DevTools\\TestFramework\\TestLibraries\\Any",
