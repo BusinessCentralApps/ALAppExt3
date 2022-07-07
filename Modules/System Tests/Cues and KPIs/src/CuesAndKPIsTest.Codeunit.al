@@ -335,7 +335,7 @@ codeunit 135039 "Cues And KPIs Test"
         RecordRef.Open(9701); // Cue Setup
         if RecordRef.FindSet() then
             repeat
-                CuesAndKPIs.ChangeUserForSetupEntry(RecordRef, Copystr(CompanyName(), 1, 30), CopyStr(UserId(), 1, 30));
+                CuesAndKPIs.ChangeUserForSetupEntry(RecordRef, Copystr(CompanyName(), 1, 30), CopyStr(UserId(), 1, 50));
             until RecordRef.Next() = 0;
 
         // verify
