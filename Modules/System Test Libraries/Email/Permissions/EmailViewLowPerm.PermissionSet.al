@@ -3,7 +3,7 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 // ------------------------------------------------------------------------------------------------
 
-permissionset 134690 "Email View Low Perm"
+permissionset 134684 "Email View Low Perm"
 {
     Assignable = true;
     IncludedPermissionSets = "Email - Admin";
