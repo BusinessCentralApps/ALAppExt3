@@ -9,7 +9,7 @@ codeunit 139914 "Test Upgrade US"
         CountryCodeTxt: Label 'US', Locked = true;
 
     [Test]
-    procedure DummyTest()
+    procedure DummyTest
     var
         Base64Convert: Codeunit "Base64 Convert";
     begin
