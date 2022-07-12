@@ -3,7 +3,6 @@ Param(
 )
 
 $parameters.appfile | Out-Host
-$parameters.syncMode = "ForceSync"
 
 $systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Microsoft_System Application_*.*.*.*.app" }
 if ($systemAppFile) {
