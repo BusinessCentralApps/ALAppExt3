@@ -9,14 +9,6 @@ codeunit 139914 "Test Upgrade US"
         CountryCodeTxt: Label 'US', Locked = true;
 
     [Test]
-    procedure DummyTest
-    var
-        Base64Convert: Codeunit "Base64 Convert";
-    begin
-        Base64Convert.ToBase64('sss', 42);
-    end;
-
-    [Test]
     procedure TestIrs1099FormBoxesGetUpdated()
     var
         IRS1099FormBox: Record "IRS 1099 Form-Box";
