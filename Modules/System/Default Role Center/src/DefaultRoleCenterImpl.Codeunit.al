@@ -27,6 +27,7 @@ codeunit 9171 "Default Role Center Impl."
         if not IsValidRoleCenterId(RoleCenterId) then begin
             Session.LogMessage('0000DUH', StrSubstNo(InvalidRoleCenterIDTelemetryMsg, RoleCenterId), Verbosity::Warning, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, 'Category', TelemetryCategoryTxt);
 
+            NavApp.GetCurrentModuleInfo(CurrentModuleInfo);
             AllProfile.Get(AllProfile.Scope::Tenant, CurrentModuleInfo.Id, 'BLANK');
             if not AllProfile.Enabled then begin
                 AllProfile.Enabled := true;
