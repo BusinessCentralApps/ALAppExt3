@@ -12,16 +12,6 @@
                         "..\\Modules\\System Test Libraries\\*",
                         "..\\Modules\\System Tests\\*"
                     ],
-    "appDependencyProbingPaths":  [
-                        {
-                            "projects":  "Modules",
-                            "release_status":  "include",
-                            "alwaysIncludeApps":  [
-                                "23de40a6-dfe8-4f80-80db-d70f83ce8caf"
-                            ],
-                            "repo":  "https://github.com/BusinessCentralApps/ALAppExt3"
-                        }
-                  ],
     "artifact":  "//20.1/base/first",
     "enablePerTenantExtensionCop":  false,
     "repoVersion":  "20.1"
