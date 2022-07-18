@@ -1,1 +1,6 @@
-[    {      "CodeunitName": "Retention Policy Log Test",      "Method": "*"    }]
+[
+    {
+      "CodeunitName": "Retention Policy Log Test",
+      "Method": "*"
+    }
+]
