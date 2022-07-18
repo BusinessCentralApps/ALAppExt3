@@ -6,6 +6,7 @@
 page 132609 "Checklist Banner Container"
 {
     PageType = Card;
+    Permissions = tabledata "Tenant Profile" = r;
 
     layout
     {
