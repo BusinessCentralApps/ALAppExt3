@@ -8,8 +8,7 @@ codeunit 132605 "Checklist Banner Test"
     Subtype = Test;
     EventSubscriberInstance = Manual;
     Permissions = tabledata "All Profile" = r,
-                  tabledata "User Personalization" = rm,
-                  tabledata "Tenant Profile" = r;
+                  tabledata "User Personalization";
 
     var
         Any: Codeunit Any;
