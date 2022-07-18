@@ -58,6 +58,7 @@ codeunit 132605 "Checklist Banner Test"
         // [GIVEN] The current company type is non-evaluation
         SetCompanyTypeToEvaluation(false);
 
+        PermissionsMock.Start();
         PermissionsMock.Set('Guided Exp Edit');
 
         // [GIVEN] 2 links
