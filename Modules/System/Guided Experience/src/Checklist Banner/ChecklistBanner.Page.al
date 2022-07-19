@@ -13,8 +13,7 @@ page 1990 "Checklist Banner"
     SourceTableTemporary = true;
     RefreshOnActivate = true;
     Extensible = false;
-    Permissions = tabledata Company = r,
-                  tabledata "Tenant Profile" = r;
+    Permissions = tabledata Company = r;
 
     // ---------------------IMPORTANT---------------------------
     // ---------------------------------------------------------
