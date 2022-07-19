@@ -45,6 +45,10 @@ codeunit 132605 "Checklist Banner Test"
         Link2: Text[250];
     begin
         BindSubscription(ChecklistBannerTest);
+
+        PermissionsMock.Start();
+        PermissionsMock.Set('Guided Exp Edit');
+
         Initialize(true);
 
         // [GIVEN] Lists of profiles
@@ -56,8 +60,6 @@ codeunit 132605 "Checklist Banner Test"
         // [GIVEN] The current company type is non-evaluation
         SetCompanyTypeToEvaluation(false);
 
-        PermissionsMock.Start();
-        PermissionsMock.Set('Guided Exp Edit');
 
         // [GIVEN] 2 links
         GetLink(Link1);

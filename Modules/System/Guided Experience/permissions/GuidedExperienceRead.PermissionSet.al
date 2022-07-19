@@ -17,7 +17,6 @@ PermissionSet 1991 "Guided Experience - Read"
     Permissions = tabledata "All Profile" = r,
                   tabledata AllObj = r,
                   tabledata AllObjWithCaption = r,
-                  tabledata "Tenant Profile" = r,
 #if not CLEAN18
 #pragma warning disable AL0432
                   tabledata "Assisted Setup" = R, // needed for AccessByPermission
