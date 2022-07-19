@@ -1,0 +1,10 @@
+[
+    {
+      "CodeunitName": "ABS Container Client Test",
+      "Method": "*"
+    },
+    {
+      "CodeunitName": "ABS Blob Client Test",
+      "Method": "*"
+    }
+  ]

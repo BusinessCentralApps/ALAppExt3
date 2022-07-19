@@ -14,5 +14,6 @@
                     ],
     "artifact":  "//20.1/base/first",
     "enablePerTenantExtensionCop":  false,
-    "repoVersion":  "20.1"
+    "repoVersion":  "20.1",
+    "MemoryLimit":  "20G"
 }
